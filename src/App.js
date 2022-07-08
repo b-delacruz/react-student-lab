@@ -1,4 +1,4 @@
-import StudentList from './Student';
+import Student from './Student';
 import './App.css';
 import { useState } from 'react';
 
@@ -67,7 +67,7 @@ function App() {
   return (
     <div className="App">
        {students.map(student =>
-      <Student key={student.index} student={student}/>
+      <Student student={student}/>
       )}
     </div>
   )

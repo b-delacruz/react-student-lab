@@ -1,11 +1,15 @@
+import Score from "./Score"
 
-const Student = (props) => {
+const Student = ({student}) => {
+  const {name,bio,scores} = student
   return (
     <>
-      <h1>Student List</h1>
-      {props.students.map(student =>
-        <Student key={student.name} student={student} />
-        )}
+      <h1>{name}</h1>
+      <p>{bio}</p>
+      <h3>Scores</h3>
+      {scores.map(score =>
+        <Score score={score}/>
+      )}
     </>
   )
 }
