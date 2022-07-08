@@ -6,7 +6,10 @@ const Student = ({student}) => {
     <>
       <h3>{name}</h3>
       <p><strong>Bio:</strong> {bio}</p>
-      <Score />
+      {scores.map(score =>
+        <Score score={score}/>
+        
+      )}
       
     </>
   )

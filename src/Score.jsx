@@ -1,9 +1,9 @@
 
-const Score = (props) => {
+const Score = () => {
 
   return (
     <>
-      <h3>Student Scores</h3>
+      <h3>Score Component</h3>
     </>
   )
 }
