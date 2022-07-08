@@ -6,9 +6,9 @@ const Student = ({student}) => {
     <>
       <h3>{name}</h3>
       <p><strong>Bio:</strong> {bio}</p>
+      <h3>Scores</h3>
       {scores.map(score =>
         <Score score={score}/>
-        
       )}
       
     </>
